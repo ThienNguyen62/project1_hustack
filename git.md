@@ -9,3 +9,4 @@ git status
 git add .
 git commit -m "feat: add project source code"
 git push -u origin main
+git ls-files // các file theo dõi

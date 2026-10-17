@@ -14,8 +14,15 @@ Input
 Output 
 13 5 36 2
 */
+
+
 /*
-cơ bản phần input/ output*/
+cơ bản phần input/ output
+yêu cầu tính toán trực tiếp, không cần vòng lặp, câu lệnh
+độ phức tạp
+tim o(1)
+spaceo(1)
+*/
 #include <iostream>
 using namespace std;
 
