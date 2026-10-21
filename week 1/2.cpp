@@ -1,4 +1,4 @@
-/*
+/* BASIC QUERIES ON ARRAY
 Given a sequence of integers a1, a2, ..., an. Perform a sequence of queries over this sequence including:
 find-max: return the maximum element of the given sequence
 find-min: return the minimum element of the given sequence 
