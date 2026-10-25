@@ -1,5 +1,6 @@
 /*Count odd and even number from a sequence
-Given a sequence of integer a1, a2, ..., an. Count the number of odd elements and even elements of the sequence.
+Given a sequence of integer a1, a2, ..., an. Count the number of odd elements and even
+elements of the sequence.
 Input
 Line 1: contains a positive integer n (1 <= n <= 100000)
 Line 2: contains a1, a2, ..., an. (1 <= ai <= 1000000)

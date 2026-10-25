@@ -1,5 +1,6 @@
 /*Count words
-Given a Text, write a prorgam to count the number Q of words (ignore characters SPACE, TAB, LineBreak) of this Text
+Given a Text, write a prorgam to count the number Q of words (ignore characters SPACE, TAB, LineBreak) 
+of this Text
 
 Input
 The Text
@@ -15,6 +16,13 @@ School of Information and Communication Technology
 
 Output
 12
+*/
+
+/*
+đếm số từ in ra số lượng từ Q , ngoài space, tab, và linebreak
+một từ là một chuỗi ký tự liên tiếp
+đọc được một từ thì tăng lên 1
+không cần viết chương trình bỏ qua space,tab,linebreak vì cin duyệt theo từ
 */
 #include <bits/stdc++.h>
 using namespace std;
