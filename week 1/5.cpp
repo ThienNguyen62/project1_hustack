@@ -1,5 +1,7 @@
 /*Convert hh:mm:ss to seconds
-Given a time moment which is a string under the format hh:mm:ss (in which hh (0 <= hh <= 23) is the hour, mm (0 <= mm <= 59) is the minute, and ss (0 <= ss <= 59) is the second). Convert this time moment in seconds (result = hh*3600 + mm*60 + ss).
+Given a time moment which is a string under the format hh:mm:ss (in which hh (0 <= hh <= 23) is the
+hour, mm (0 <= mm <= 59) is the minute, and ss (0 <= ss <= 59) is the second). Convert this time
+ moment in seconds (result = hh*3600 + mm*60 + ss).
 Input
 Line 1: contains a string s representing the time moment.  
 Output
@@ -25,6 +27,11 @@ Input
 Output
 INCORRECT
 */
+
+/*
+chuỗi s biểu diễn thời gian theo định dạng. nếu chuỗi đúng định dạng
+thì chuyển thời gian thành giây, nếu sai thì ra Incorrect
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -39,7 +46,7 @@ int main() {
     }
 
     // Kiểm tra các ký tự còn lại phải là chữ số
-    int pos[] = {0, 1, 3, 4, 6, 7};
+    int pos[] = {0, 1, 3, 4, 6, 7};  // kiểm tra giá trị ở các index
 
     for (int i : pos) {
         if (!isdigit(s[i])) {
@@ -64,3 +71,28 @@ int main() {
 
     return 0;
 }
+
+
+/*
+giờ hh vị trí 0,1
+phút vị trí 3,4
+giây vị trí 6,7
+kí tự " :" ở vị trí 2 và 5
+
+lặp và kiểm tra các giá trị ở vị trí pos
+khi có nhiều phần tử cần thực hiện cùng 1 thao tác, lưu chúng vào một
+tập hợp rồi dùng vòng lặp, thay vì viết lặp lại nhiều điều kiện
+
+chuyển kí tự số sang giá trị số nguyên tương ứng
+kiểm tra giá trị trong phạm vi cho phép
+giờ <= 23, giây <= 59
+
+cuối cùng là tính toán ra kết quá
+
+flow
+validate: kiểm tra dữ liệu có hợp lệ không
+parse chuyển chuỗi sang các giá tỉ cần thiết
+calculate: thực hiện tính toán
+
+
+*/

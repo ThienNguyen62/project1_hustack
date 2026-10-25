@@ -1,5 +1,8 @@
 /*Compare money deposited of 2 periods
-Cho dãy số nguyên a[1], a[2], . . ., a[n] trong đó a[i] là số tiền khách hàng gửi vào ngân hàng trong ngày i (i = 1, 2, . . ., n). Ta cần xử lý m truy vấn, mỗi truy vấn được biểu diễn bởi 4 chỉ số i1, j1, i2 và j2: kết quả của truy vấn bằng 1 nếu tổng số tiền khách hàng gửi trong giai đoạn từ ngày i1 đến ngày j1 nhỏ hơn tổng số tiền khách gửi trong giai đoạn từ ngày i2 đến ngày j2, ngược lại thì kết quả truy vấn bằng 0.
+Cho dãy số nguyên a[1], a[2], . . ., a[n] trong đó a[i] là số tiền khách hàng gửi vào ngân hàng trong ngày i 
+(i = 1, 2, . . ., n). Ta cần xử lý m truy vấn, mỗi truy vấn được biểu diễn bởi 4 chỉ số i1, j1, i2 và j2: 
+kết quả của truy vấn bằng 1 nếu tổng số tiền khách hàng gửi trong giai đoạn từ ngày i1 đến ngày j1 nhỏ hơn 
+tổng số tiền khách gửi trong giai đoạn từ ngày i2 đến ngày j2, ngược lại thì kết quả truy vấn bằng 0.
 
 Input 
 Dòng 1: chứa 3 số nguyên dương n  (1 <= n <= 100000)
