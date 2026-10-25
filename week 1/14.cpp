@@ -5,7 +5,8 @@ Line 1 contains 3 integers a, b, c
 Output
 Write NO SOLUTION if the given equation has no solution 
 Write x0 (2 digits after the decimal point) if the given equation has one solution x0 
-Write x1 and x2 with x1 < x2 (2 digits after the decimal point) if the given equation has two distinct solutions x1, x2 
+Write x1 and x2 with x1 < x2 (2 digits after the decimal point) if the given equation
+ has two distinct solutions x1, x2 
 
 Example
 Input 

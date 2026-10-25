@@ -1,5 +1,8 @@
 /*So sánh chênh lệch giá điện theo đề xuất mới của EVN
-Hiện tại giá điện đang được tính theo bậc thang gồm 6 mức (mức điều chỉnh từ 04/05/2023), với giá thấp nhất (bậc 1) là 1.728VND và giá bậc cao nhất là 3.015 VND. Tuy nhiên EVN đang đề xuất một cách tính giá điện bậc thang mới chỉ gồm 5 mức như hinh dưới, giá thấp nhất (bậc 1) khoảng 1.728 đồng một kWh và cao nhất (bậc 5) là 3.457 đồng một kWh. 
+Hiện tại giá điện đang được tính theo bậc thang gồm 6 mức (mức điều chỉnh từ 04/05/2023), với giá 
+thấp nhất (bậc 1) là 1.728VND và giá bậc cao nhất là 3.015 VND. Tuy nhiên EVN đang đề xuất một cách 
+tính giá điện bậc thang mới chỉ gồm 5 mức như hinh dưới, giá thấp nhất (bậc 1) khoảng 1.728 đồng một
+ kWh và cao nhất (bậc 5) là 3.457 đồng một kWh. 
 
 Bậc	Biểu giá hiện hành	Phương án 5 bậc
   	Mức sử dụng	Giá (*)	Mức sử dụng	Giá
@@ -11,7 +14,8 @@ Bậc	Biểu giá hiện hành	Phương án 5 bậc
 6  	401 kWh trở lên	3.015		
 (*) Giá chưa bao gồm thuế VAT
 
-Hãy xây dựng chương trình nhập vào số kwh điện của một hộ tiêu thụ và so sánh xem theo bảng giá mới đang lấy ý kiến thì tiền điện tiêu thụ của hộ đó sẽ tăng thêm hay giảm đi bao nhiêu.
+Hãy xây dựng chương trình nhập vào số kwh điện của một hộ tiêu thụ và so sánh xem theo bảng giá mới 
+đang lấy ý kiến thì tiền điện tiêu thụ của hộ đó sẽ tăng thêm hay giảm đi bao nhiêu.
 
 INPUT: là số kwh điện tiêu thụ của hộ (là số nguyên)
 OUTPUT: là chênh lệch giữa giá theo đề xuất và giá theo mô hình bậc thang 6 mức đang được áp dụng.
