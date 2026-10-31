@@ -1,5 +1,6 @@
 /*Binary sequence generation
-Given an integer n, write a program that generates all the binary sequences of length n in a lexicographic order.
+Given an integer n, write a program that generates all the binary sequences of length n in a lexicographic
+order.
 Input
 Line 1: contains an integer n (1 <= n <= 20)
 Output
