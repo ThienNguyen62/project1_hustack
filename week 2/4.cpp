@@ -25,6 +25,16 @@ Input
 Output
 64
 */
+
+/*
+bài toán đếm số lời giải soduku -backtracking + bitmask
+khác bài nhị phân thì bài này nhiều nhánh hơn, mỗi ô chọn từ 1 đến 9
+các điều kiện ràng buộc
+9x9 gồm 81 ô
+3 điều kiện là mỗi hàng không được trùng số từ 1 đến 9, mỗi cột không được trùng 
+số, mỗi số trong ô vuông 3x3 không được trùng số
+
+*/
 #include <iostream>
 using namespace std;
 
@@ -129,3 +139,12 @@ int main() {
 
     return 0;
 }
+/*
+ý tưởng : thay vì duyệt từng hàng, cột , ô vuông 3x3 để kiểm tra xem số có bị trùng hay không
+ta dùng các bit để lưu những số đã xuất hiện
+int mask = (~(rowMask[r] | colMask[c] | boxMask[b])) & 0x3FE;
+ | để gộp tất cả các số xuất hiển ở hàng , cột, ô 3x3
+ ~ để đảo bit, lấy những số chưa xuất hiện
+ dùng &0x3fe để chỉ giữ các bit từ 1 đến 9
+
+*/

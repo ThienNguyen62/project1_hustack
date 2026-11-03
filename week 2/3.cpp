@@ -3,9 +3,7 @@ Given two positive integers k and n. Compute C(k,n) which is the number of ways 
 Input
 Line 1: two positive integers k and n (1 <= k,n <= 999)
 Output
-Write te value C(k,n) modulo 10
-9
-+7.
+Write te value C(k,n) modulo 10^9+7.
 Example
 Input
 3  5
@@ -39,3 +37,4 @@ int main() {
 
     return 0;
 }
+// chỉ cần tính c(k,n)
