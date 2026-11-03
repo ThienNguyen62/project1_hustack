@@ -14,6 +14,8 @@ Output
 100
 101
 */
+
+// in ra dãy nhị phân không có 2 số 1 liên tiếp
 #include <iostream>
 using namespace std;
 
@@ -43,3 +45,24 @@ int main() {
     generate(0);
     return 0;
 }
+/*
+nếu pos == 0 thì in dãy rồi trở về hàm gọi
+thử đặt 0 tại pos và đệ quy
+khi nhánh 0 hoàn tất, kiểm tra điền kiển và thử đặt 1
+nếu hợp lệ, gán 1 rồi tiếp tục đề quy
+
+bị chặn là không đi tiếp vào nhánh đó, không tin kết quả
+
+a[0] = 0
+  a[1] = 0
+    a[2] = 0  → IN 000
+    a[2] = 1  → IN 001
+  a[1] = 1
+    a[2] = 0  → IN 010
+    a[2] = 1  → BỊ CHẶN
+a[0] = 1
+  a[1] = 0
+    a[2] = 0  → IN 100
+    a[2] = 1  → IN 101
+  a[1] = 1    → BỊ CHẶN
+*/
