@@ -44,8 +44,67 @@ int main() {
 
     cin >> n;
 
-    s.resize(n);
+    s.resize(n); // khởi tạo chuỗi n ký tự để có thể gán trực tiếp s[pos]
     generate(0);
 
     return 0;
 }
+
+/*
+bài toán tạo ra dãy độ dài n có thể chia thành các bài toán nhỏ hơn
+chọn giá trị tại vị trí hiện tại , sau đó tạo tiếp các vị trí còn lại
+
+hàm generate (pos)
+nếu pos == n thì toàn bộ vị trí từ 0 đến n-1 đã được gán
+
+2 chương trình đệ quy
+thử xem tại vị trí hiện tại và sinh rất cả dãy bắt đầu bằng tiến tố đọ
+sau khi hoàn thành nó đổi vị trị hiện tại thành 1 và sinh các dãy còn lại
+
+
+Mindset
+n=3
+0	000
+1	001
+2	010
+3	011
+4	100
+5	101
+6	110
+7	111
+
+
+generate(0)
+│
+├── s[0] = '0'
+│   └── generate(1)
+│       │
+│       ├── s[1] = '0'
+│       │   └── generate(2)
+│       │       ├── s[2] = '0' → generate(3) → IN 000
+│       │       └── s[2] = '1' → generate(3) → IN 001
+│       │
+│       └── s[1] = '1'
+│           └── generate(2)
+│               ├── s[2] = '0' → generate(3) → IN 010
+│               └── s[2] = '1' → generate(3) → IN 011
+│
+└── s[0] = '1'
+    └── generate(1)
+        │
+        ├── s[1] = '0'
+        │   └── generate(2)
+        │       ├── s[2] = '0' → generate(3) → IN 100
+        │       └── s[2] = '1' → generate(3) → IN 101
+        │
+        └── s[1] = '1'
+            └── generate(2)
+                ├── s[2] = '0' → generate(3) → IN 110
+                └── s[2] = '1' → generate(3) → IN 111
+
+
+
+điểm mấu chốt. tại vị trí nào bạn cũng thực hiện một công việc giống nhau
+chọn 1 trong hai vị trí 0 hoặc 1 cho vị trí hiện tại , rồi tiếp tục giải quyết vị trí tiếp theo
+
+*/
