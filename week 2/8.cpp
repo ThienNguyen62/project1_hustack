@@ -20,6 +20,12 @@ Output
 2 2
 4
 */
+
+// phân tích N thành tổng các số nguyên dương - backtracking
+/*
+bài toán này thêm tự duy không phải lúc nào đệ quy cũng dùng pos +! la fdudr, đôi khi phải truyền thêm
+trạng thái để kiểm soát những lựa chọn tiếp theo
+*/
 #include <iostream>
 using namespace std;
 
